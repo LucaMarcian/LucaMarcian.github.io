@@ -79,10 +79,11 @@ footer a { margin-left: auto; }
 }
 /* Give the mobile profile a prominent photo and a centred menu. */
 @media (max-width: 800px) {
- .portrait-link { width: min(100%, clamp(180px, 55vw, 240px)); justify-self: center; }
- .portrait { width: 100%; height: auto; }
- nav { justify-content: center; text-align: center; }
- .socials { justify-content: center; }
+ .sidebar { padding: 24px 20px; justify-items: center; }
+ .portrait-link { width: min(100%, clamp(200px, 70vw, 320px)); justify-self: center; }
+ .portrait { width: 100%; height: auto; border-width: clamp(10px, 4.3vw, 18px); padding: clamp(4px, 2vw, 8px); }
+ nav { justify-content: center; text-align: center; margin-top: 0; }
+ .socials { justify-content: center; padding-top: 8px; }
 }
 @media print { .sidebar, .skip-link, footer a { display: none; } main { width: auto; margin: 0; padding: 0; max-width: none; } body { background: white; } .paper { break-inside: avoid; } }
 
