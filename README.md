@@ -84,6 +84,8 @@ The social icons are original simple SVG drawings. Your supplied photo is retain
 
 ## Local preview
 
+The sidebar photo and spacing adapt to the available window height. Desktop navigation stays beside the content; windows up to 800px wide or 420px high place it above the content, using a single page scroll. These rules are in `css/styles.css`; `--sidebar-width` controls the desktop column width. Text size follows the browser's zoom and accessibility settings.
+
 Double-click `index.html` to view it. For an HTTP preview, run this command from the project folder:
 
 ```text
