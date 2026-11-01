@@ -1,0 +1,84 @@
+@font-face { font-family: Belgrano; src: url('../assets/fonts/belgrano.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Source Sans 3'; src: url('../assets/fonts/source-sans-3.ttf') format('truetype'); font-weight: 200 900; font-display: swap; }
+/* Change these three values to recolour your website. */
+:root {
+  --background: #d3dbe6;
+  --accent: #81b1ce;
+  --text: #23476a;
+  --separator: rgb(35 71 106 / 22%);
+  --body-font: Belgrano, Georgia, serif;
+  --heading-font: 'Source Sans 3', Arial, sans-serif;
+  --sidebar-width: 280px;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-padding-top: 32px; }
+body { margin: 0; color: var(--text); background: var(--background); font-family: var(--body-font); font-size: 18px; line-height: 1.8; }
+a { color: inherit; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--text); outline-offset: 5px; }
+.sidebar { position: fixed; inset: 0 auto 0 0; width: var(--sidebar-width); padding: 48px 32px 28px; background: var(--text); color: var(--accent); border-right: 1px solid var(--separator); display: flex; flex-direction: column; align-items: center; overflow-y: auto; }
+.portrait-link { display: block; line-height: 0; }
+.portrait { width: 210px; height: 210px; border: 8px solid var(--accent); padding: 4px; border-radius: 50%; object-fit: cover; }
+.sidebar-name { font: 600 25px/1.3 var(--heading-font); margin: 24px 0 4px; text-align: center; }
+.sidebar-role { margin: 0 0 32px; font: 400 17px/1.5 var(--heading-font); text-align: center; }
+nav { width: 100%; display: grid; gap: 6px; margin-top: 32px; }
+nav a { padding: 7px 12px; font: 500 19px/1.5 var(--heading-font); border-left: 3px solid transparent; text-decoration: none; }
+nav a:hover, nav a[aria-current] { border-color: var(--accent); background: transparent; }
+.socials { width: 100%; margin-top: auto; padding-top: 44px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.social { display: inline-flex; align-items: center; gap: 7px; font: 500 16px/1.5 var(--heading-font); min-height: 44px; }
+main { max-width: 1210px; margin-left: var(--sidebar-width); padding: 64px clamp(32px, 5.5vw, 88px) 24px; }
+section { scroll-margin-top: 32px; }
+#about { padding-bottom: 48px; }
+.eyebrow { margin: 0 0 16px; font: 600 16px/1.5 var(--heading-font); letter-spacing: .12em; text-transform: uppercase; }
+h1, h2, h3 { font-family: var(--heading-font); }
+h1 { font-size: clamp(46px, calc(5.2vw + 2px), 70px); font-weight: 600; line-height: 1.08; letter-spacing: -.035em; margin: 0 0 20px; overflow-wrap: anywhere; }
+.affiliation { margin: 0; font: 500 22px/1.5 var(--heading-font); }
+.contact { margin: 8px 0 28px; font: 700 22px/1.5 var(--heading-font); overflow-wrap: anywhere; }
+.biography { max-width: 70ch; font-size: 20px; }
+.biography p { margin: 0 0 20px; white-space: pre-line; }
+.cv-sentence { font-size: 20px; }
+.cv-link { display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 10px; font: 600 19px/1.6 var(--heading-font); padding-bottom: 3px; border-bottom: 2px solid var(--accent); text-decoration: none; margin-top: 8px; }
+.cv-link small { font-size: 15px; font-weight: 400; }
+.research-section { border-top: 5px solid var(--text); padding: 32px 0 38px; }
+h2 { font-size: 32px; font-weight: 600; line-height: 1.2; margin: 0 0 28px; letter-spacing: -.015em; }
+.paper + .paper { margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--separator); }
+h3 { font-size: 25px; line-height: 1.35; font-weight: 600; margin: 0 0 8px; overflow-wrap: anywhere; white-space: pre-line; }
+.coauthors { font-size: 16px; margin: 0 0 5px; }
+.status { font: 500 18px/1.6 var(--heading-font); margin: 0 0 14px; }
+.paper-tools { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px 24px; }
+.pdf-link, .pdf-placeholder, summary { font: 600 17px/1.6 var(--heading-font); padding: 3px 0; }
+.pdf-placeholder { font-weight: 400; }
+details { flex: 1 1 220px; min-width: 0; }
+summary { cursor: pointer; width: fit-content; }
+summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.abstract { font-size: 16px; line-height: 1.85; text-align: justify; white-space: pre-line; margin: 12px 0 0; padding-left: 16px; border-left: 2px solid var(--accent); }
+footer { border-top: 1px solid var(--separator); padding-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; font: 400 16px/1.6 var(--heading-font); }
+footer a { margin-left: auto; }
+.favicon-credit { margin: 12px 0 0; font: 400 14px/1.6 var(--heading-font); }
+.skip-link { position: fixed; top: -100px; left: 16px; padding: 8px 16px; background: var(--background); z-index: 3; }
+.skip-link:focus { top: 12px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 800px) {
+ .sidebar { position: static; width: 100%; padding: 28px 24px 18px; border-right: 0; border-bottom: 1px solid var(--separator); display: grid; grid-template-columns: 120px 1fr; gap: 0 20px; align-items: center; }
+ .portrait-link { grid-row: 1 / 3; }
+ .portrait { width: 120px; height: 120px; }
+ .sidebar-name { text-align: left; margin: 0; align-self: end; }
+ .sidebar-role { text-align: left; margin: 4px 0 0; align-self: start; }
+ nav { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 8px; margin-top: 22px; }
+ nav a { padding: 8px 9px; font-size: 17px; border-left: 0; border-bottom: 2px solid transparent; }
+ .socials { grid-column: 1 / -1; justify-content: flex-start; padding-top: 10px; margin: 0; }
+ main { margin: 0; padding: 36px 24px 24px; }
+ h1 { font-size: 48px; }
+ h2 { font-size: 30px; }
+ #about { padding-bottom: 36px; }
+ .research-section { padding: 28px 0 32px; }
+}
+@media print { .sidebar, .skip-link, footer a { display: none; } main { margin: 0; padding: 0; max-width: none; } body { background: white; } .paper { break-inside: avoid; } }
+
+/* Sidebar icons and focus indicators follow the accent colour. */
+.sidebar a:focus-visible { outline-color: var(--accent); }
+.social img { display: none; }
+.social::before { content: ""; width: 22px; height: 22px; flex-shrink: 0; background: var(--accent); mask: var(--social-icon) center / contain no-repeat; }
+#linkedin { --social-icon: url('../assets/icons/linkedin.svg'); }
+#github { --social-icon: url('../assets/icons/github.svg'); }
