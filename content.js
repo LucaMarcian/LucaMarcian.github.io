@@ -43,13 +43,15 @@ window.siteContent = {
   //  },
   //],
   workInProgress: [
-    {
-      title: "Motherhood Delay and Child Outcomes",
-      coauthors: "",
-      status: "",
-      pdf: "",
-      abstract: ""
-    },
+    
+    //{
+    //title: "Motherhood Delay and Child Outcomes",
+    //  coauthors: "",
+    //  status: "",
+    //  pdf: "",
+    //  abstract: ""
+    // },
+    
     {
       title: "Taking the Pill and breaking the links:\nThe effect of oral contraceptives on intergenerational mobility",
       coauthors: [
@@ -71,7 +73,7 @@ window.siteContent = {
       abstract: ""
     },
     {
-      title: " Social Media and Labor Market outcomes: An analysis of the effect of Facebook exposure on college graduates earnings",
+      title: " Social Media and Labor Market outcomes: An analysis of the effect of Facebook exposure on college graduates' earnings",
       coauthors: [
         { name: "Kacper Krasowski", url: "https://kacperkrasowski.github.io/" }
       ],
