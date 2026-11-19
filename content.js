@@ -71,7 +71,7 @@ window.siteContent = {
       abstract: ""
     },
     {
-      title: "Social Media and Labor Market outcomes:\nAn analysis of Facebook effect on college graduates earnings",
+      title: " Social Media and Labor Market outcomes: An analysis of the effect of Facebook exposure on college graduates earnings",
       coauthors: [
         { name: "Kacper Krasowski", url: "https://kacperkrasowski.github.io/" }
       ],
